@@ -21,8 +21,8 @@ Come learn how to quickly build an automated image thumbnail generator with litt
 
 ## Learning Objectives
 * Understand Azure Functions, Azure Event Grid, Azure Storage, and how they can work together
-* Learn from first-hand experiences of building an automated thumbnail geneation utility using serverless offerings
-* Undertand the different between the Azure Functions Blob trigger and the Azure Functions Event Grid trigger
+* Learn from first-hand experiences of building an automated thumbnail generation utility using serverless offerings
+* Understand the different between the Azure Functions Blob trigger and the Azure Functions Event Grid trigger
 
 ## Presentations
 
