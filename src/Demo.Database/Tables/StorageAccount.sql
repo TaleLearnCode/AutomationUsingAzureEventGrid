@@ -5,6 +5,7 @@
   ContainerName    VARCHAR(63)   NOT NULL,
   FolderPath       VARCHAR(1024)     NULL,
   AllowSubfolders  BIT               NULL,
+  CascadeDeletes   BIT           NOT NULL,
   CONSTRAINT pkcStorageAccount PRIMARY KEY CLUSTERED (StorageAccountId)
 )
 GO
@@ -20,6 +21,8 @@ GO
 EXEC sp_addextendedproperty @level0name=N'dbo', @level1name=N'StorageAccount', @level2name=N'FolderPath',        @value=N'The blob folder path prefrix.  Leave NULL for no folder suffix or to include all folders within a container.', @name=N'MS_Description', @level0type=N'SCHEMA', @level1type=N'TABLE', @level2type=N'COLUMN';
 GO
 EXEC sp_addextendedproperty @level0name=N'dbo', @level1name=N'StorageAccount', @level2name=N'AllowSubfolders',   @value=N'Indicates whether subfolders are allowed from FolderPath.  Ignored if FolderPath is NULL.',                    @name=N'MS_Description', @level0type=N'SCHEMA', @level1type=N'TABLE', @level2type=N'COLUMN';
+GO
+EXEC sp_addextendedproperty @level0name=N'dbo', @level1name=N'StorageAccount', @level2name=N'CascadeDeletes',    @value=N'Indicates whether generated thumbnails will be deleted when the origin is deleted.',                           @name=N'MS_Description', @level0type=N'SCHEMA', @level1type=N'TABLE', @level2type=N'COLUMN';
 GO
 EXEC sp_addextendedproperty @level0name=N'dbo', @level1name=N'StorageAccount', @level2name=N'pkcStorageAccount', @value=N'Defines the primary key for the StorageAccount table using the StorageAccountId column.',                      @name=N'MS_Description', @level0type=N'SCHEMA', @level1type=N'TABLE', @level2type=N'CONSTRAINT';
 GO

@@ -8,7 +8,6 @@
   CONSTRAINT pkcTenant PRIMARY KEY CLUSTERED (TenantId)
 )
 GO
---9EAEC392-C918-4D59-843F-B56A9D36E34B
 
 EXEC sp_addextendedproperty @level0name=N'dbo', @level1name=N'Tenant',                                    @value=N'Represents a tenant organization.',                                        @name=N'MS_Description', @level0type=N'SCHEMA', @level1type=N'TABLE';
 GO
