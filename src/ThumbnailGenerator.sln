@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThumbnailGenerator.Domain",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThumbnailGenerator.Data", "ThumbnailGenerator.Data\ThumbnailGenerator.Data.csproj", "{13B72502-3E50-4DA3-9C93-1781421C46E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThumbnailGenerator.Services", "ThumbnailGenerator.Services\ThumbnailGenerator.Services.csproj", "{6D5A6F56-1A83-4CF7-BD19-B3661432DF80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThumbnailGenerator.Services", "ThumbnailGenerator.Services\ThumbnailGenerator.Services.csproj", "{6D5A6F56-1A83-4CF7-BD19-B3661432DF80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
