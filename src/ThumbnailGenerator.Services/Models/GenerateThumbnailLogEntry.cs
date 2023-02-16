@@ -1,7 +1,4 @@
-﻿using Azure;
-using Azure.Data.Tables;
-
-#nullable disable
+﻿#nullable disable
 
 namespace TaleLearnCode.ThumbnailGenerator.Models;
 
@@ -34,7 +31,7 @@ public class GenerateThumbnailLogEntry : ITableEntity
 			OriginWidth = generateThumbnailResponse.Origin.Width;
 		}
 
-		if (generateThumbnailResponse.Origin is not null)
+		if (generateThumbnailResponse.Thumbnail is not null)
 		{
 			ThumbnailStorageAccountName = generateThumbnailResponse.Thumbnail.StorageAccountName;
 			ThumbnailContainerName = generateThumbnailResponse.Thumbnail.ContainerName;

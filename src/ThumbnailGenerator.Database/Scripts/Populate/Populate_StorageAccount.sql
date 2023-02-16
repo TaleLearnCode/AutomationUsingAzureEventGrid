@@ -1,8 +1,8 @@
 ﻿MERGE dbo.StorageAccount AS TARGET
-USING (VALUES (1, 1, 'stthumbnailgenerator2', 'TenantSpecific',      'images',                   1),
-              (2, 0, 'stthumbnailgenerator2', 'TenantSpecific',      'thumbnails',               NULL),
-              (3, 1, 'stthumbnailgenerator2', 'SpeakingEngagements', 'presentations',            NULL),
-              (4, 0, 'stthumbnailgenerator2', 'SpeakingEngagements', 'thumbnails/presentations', NULL))
+USING (VALUES (1, 1, 'stmythumbnailgenerator', 'TenantSpecific',      'images',                   1),
+              (2, 0, 'stmythumbnailgenerator', 'TenantSpecific',      'thumbnails',               NULL),
+              (3, 1, 'stmythumbnailgenerator', 'speakingengagements', 'presentations',            NULL),
+              (4, 0, 'stmythumbnailgenerator', 'speakingengagements', 'thumbnails/presentations', NULL))
 AS SOURCE (StorageAccountId,
            CascadeDeletes,
            ResourceName,

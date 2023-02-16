@@ -1,7 +1,4 @@
-﻿using SixLabors.ImageSharp;
-using TaleLearnCode.ThumbnailGenerator.Domain;
-
-namespace TaleLearnCode.ThumbnailGenerator.Models;
+﻿namespace TaleLearnCode.ThumbnailGenerator.Models;
 
 internal class ImageDimensions
 {
@@ -29,7 +26,7 @@ internal class ImageDimensions
 		else
 		{
 			ThumbnailWidth = thumbnailGeneratorConfig.ThumbnailWidth;
-			ThumbnailHeight = GetThumbnailDimension(image.Width, image.Height, ThumbnailHeight);
+			ThumbnailHeight = GetThumbnailDimension(image.Width, image.Height, ThumbnailWidth);
 		}
 	}
 

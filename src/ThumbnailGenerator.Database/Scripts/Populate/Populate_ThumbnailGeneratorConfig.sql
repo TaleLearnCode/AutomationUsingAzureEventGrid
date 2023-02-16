@@ -1,5 +1,5 @@
 ﻿MERGE dbo.ThumbnailGeneratorConfig AS TARGET
-USING (VALUES (1, 'Tenant Specific', 1, 2, 0, 100, NULL, NULL),
+USING (VALUES (1, 'Tenant Specific',      1, 2, 0, 100, NULL, NULL),
               (2, 'Speaking Engagements', 3, 4, 0, 150, NULL, NULL))
 AS SOURCE (ThumbnailGeneratorConfigId,
            ThumbnailGeneratorConfigName,
