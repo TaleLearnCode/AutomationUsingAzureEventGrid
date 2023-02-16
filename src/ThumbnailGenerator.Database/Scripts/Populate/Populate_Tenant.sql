@@ -2,7 +2,7 @@
 GO
 
 MERGE dbo.Tenant AS TARGET
-USING (VALUES (1, '9EAEC392-C918-4D59-843F-B56A9D36E34B', 'Northstar Senior Living', 'sqldb-thumbnailgenerator-dev-use', 'sql-NorthstarSeniorLiving-dev-use'))
+USING (VALUES (1, '9eaec392-c918-4d59-843f-b56a9d36e34b', 'Northstar Senior Living', 'sqldb-thumbnailgenerator-dev-use', 'sql-NorthstarSeniorLiving-dev-use'))
 AS SOURCE (TenantId,
            TenantKey,
            TenantName,

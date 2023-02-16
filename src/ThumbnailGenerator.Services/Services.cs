@@ -1,32 +1,16 @@
-﻿
-using Azure;
-using Azure.Data.Tables;
-using Azure.Storage.Blobs;
-using Azure.Storage.Blobs.Models;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
-using Microsoft.Extensions.Configuration;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Formats;
-using SixLabors.ImageSharp.Formats.Gif;
-using SixLabors.ImageSharp.Formats.Jpeg;
-using SixLabors.ImageSharp.Formats.Png;
-using SixLabors.ImageSharp.Processing;
-using System.Diagnostics;
-using TaleLearnCode.ThumbnailGenerator.Extensions;
-
-namespace TaleLearnCode.ThumbnailGenerator;
+﻿namespace TaleLearnCode.ThumbnailGenerator;
 
 public class Services
 {
 
-	private readonly IConfigurationRoot _config;
+	private readonly IConfiguration _config;
 
 	private const string _tenantSpecificContainerName = "TenantSpecific";
 
 	private const string _createOperation = "Create";
 	private const string _deleteOperation = "Delete";
 
-	public Services(IConfigurationRoot config) => _config = config;
+	public Services(IConfiguration config) => _config = config;
 
 	public async Task<GenerateThumbnailResponse> GenerateThumbnailAsync(
 		GenerateThumbnailRequest request,

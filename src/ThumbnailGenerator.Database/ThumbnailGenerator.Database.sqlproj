@@ -70,7 +70,6 @@
     <None Include="Scripts\Populate\Populate_StorageAccount.sql" />
     <None Include="Scripts\Populate\Populate_ThumbnailGeneratorConfig.sql" />
     <None Include="Scripts\Populate\Populate_Tenant.sql" />
-    <None Include="ThumbnailGenerator.Database.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
