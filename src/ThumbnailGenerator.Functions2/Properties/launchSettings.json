@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "ThumbnailGenerator.Functions2": {
-      "commandName": "Project",
-      "commandLineArgs": "--port 7059",
-      "launchBrowser": false
-    }
-  }
-}
